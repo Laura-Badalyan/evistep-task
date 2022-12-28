@@ -1,0 +1,57 @@
+@import "vars";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-sourcesans;
+  color: $color-white;
+}
+
+body{
+  background: $color-cod-gray;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.discountContent {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.discountContainer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: $color-cornflower-blue;
+  border-radius: 31px;
+  transition: all .3s ease;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.title {
+  font-weight: $font-weight-bolder;
+  font-size: 44px;
+  line-height: 50px;
+  color: $color-white;
+}

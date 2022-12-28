@@ -1,0 +1,35 @@
+.discountNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 19px 0 130px;
+  @include tablet{
+    margin: 19px 0 50px;
+  }
+  &__logo{
+    max-width: 190px;
+    width: 100%;
+  }
+  &__logoImg{
+    @include mobile{
+      width: 80%;
+    }
+  }
+  &__btn{
+    background: $color-cod-gray;
+    color: $color-white;
+    border: 1px solid $color-cornflower-blue;
+    border-radius:
+            131px;
+    filter: drop-shadow(0px 14px 24px rgba(0, 0, 0, 0.13));
+    height: 38px;
+    width: 125px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile{
+      font-size: 13px;
+    }
+  }
+}

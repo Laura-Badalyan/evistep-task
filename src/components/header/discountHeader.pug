@@ -1,0 +1,33 @@
+header.discountHeader
+    .discountHeader__description.description
+        p.description__title
+            | CYBER MONDAY
+            span.description__title--accent  means an even
+            |   bigger sale
+        .description__text
+        | Cyber Monday saves you money,
+        br
+        | WebWork saves you time.
+        br
+        .description__btn.btn
+            a.btn__link.button(href="javascript:void(0)") SAVE BIG NOW
+        .description__about
+            .description__aboutImage
+                +image("description__about--img","headerTick.svg")
+            p.description__about--info
+            | 14-day free trial  |  No credit card required
+        .description__reviews
+            .description__reviewsImage
+                +image("description__reviews--img","headerRatingStars.png")
+            p.description__reviews--info
+            | Reviews from 51K+ happy users below and beyond
+        .description__reviewImages
+            a(href="javascript:void(0)")
+                +image("description__reviewImages--img","headerReview1.png")
+            a(href="javascript:void(0)")
+                +image("description__reviewImages--img","headerReview2.png")
+            a(href="javascript:void(0)")
+                +image("description__reviewImages--img","headerReview3.png")
+    .discountHeader__discount.discount
+        .discount__image
+            +image("discount__image--img","headerPercent.png")

@@ -1,0 +1,69 @@
+.description{
+  &>div,
+  &>p{
+    margin: 20px auto;
+  }
+  &__title{
+    font-size: 49px;
+    font-weight: $font-weight-bolder;
+    color: $color-golden-tainoi;
+    font-style: italic;
+    line-height: 45px;
+    &--accent {
+      color: white;
+      font-style: normal;
+      font-weight: $font-weight-bold;
+    }
+    @include mobile-wide{
+      font-size: 30px;
+    }
+  }
+  &__text{
+    font-size: 16px;
+  }
+  &__btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 229px;
+    height: 49px;
+    background: #8276ff;
+    box-shadow: 0 4.07788px 14.2726px rgb(130 118 255 / 30%);
+    border-radius: 31.0938px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  &__about{
+    display: flex;
+    font-size: 16px;
+    &--img{
+    }
+    &--info{
+      margin-left: 10px;
+    }
+  }
+  &__reviews{
+    display: flex;
+    &--img{
+
+    }
+    &--info{
+      margin-left: 10px;
+      @include mobile-wide{
+        font-size: 12px;
+      }
+    }
+  }
+  &__reviewImages{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &--img{
+    width: 80%;
+    margin: 0 20px 0 0;
+  }
+  }
+
+}

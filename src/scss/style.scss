@@ -1,0 +1,20 @@
+//UTILS
+@import "src/scss/utils/vars";
+@import "src/scss/utils/mixins";
+@import "src/scss/utils/fonts";
+@import "src/scss/utils/global";
+
+//COMPONENTS
+
+//NAVIGATION START
+@import "../components/navbar/styles/discountNav";
+//NAVIGATION END
+//HEADER START
+@import "../components/header/styles/discountHeader";
+@import "../components/header/styles/description";
+@import "../components/header/styles/discount";
+//HEADER END
+//BENEFIT START
+@import "../components/benetit/styles/discountBenefit";
+@import "../components/benetit/styles/benBlock";
+//BENEFIT END

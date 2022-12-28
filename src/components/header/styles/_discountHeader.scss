@@ -1,0 +1,22 @@
+.discountHeader{
+  color: $color-white;
+  box-sizing: border-box;
+  margin: 0 auto 200px;
+  display: flex;
+  @include tablet{
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &__description{
+    width: 50%;
+    @include tablet{
+      width: 90%;
+    }
+  }
+  &__discount{
+    width: 50%;
+    @include tablet{
+      display: none;
+    }
+  }
+}

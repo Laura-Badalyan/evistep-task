@@ -1,0 +1,44 @@
+.benBlock{
+  width: 537px;
+  height: 586px;
+  margin: 0 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(141, 159, 244, 0.3);
+  backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  &__discount{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bolder;
+    position: absolute;
+    top: -60px;
+    right: -66px;
+    background: url(../img/benefitNeonOutline.png) no-repeat;
+    background-size: contain;
+  }
+  &__oldPrice{
+
+  }
+  &__info{
+    &--title{
+
+    }
+    &--price{
+
+    }
+    &--listItem{
+
+    }
+  }
+  &__months{
+
+  }
+  &__img{
+
+  }
+}

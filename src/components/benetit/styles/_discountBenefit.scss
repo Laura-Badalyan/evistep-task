@@ -1,0 +1,15 @@
+.discountBenefit{
+  &__title{
+    font-size: 39px;
+    text-align: center;
+    margin: 150px auto;
+  }
+  &__blocks{
+    display: flex;
+  }
+  &__block{
+    width: 50%;
+    max-height: 586px;
+    height: 100%;
+  }
+}
