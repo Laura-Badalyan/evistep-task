@@ -22,6 +22,9 @@
     font-weight: $font-weight-medium;
     font-size: 49px;
     line-height: 62px;
+    @include mobile-wide{
+      font-size: 30px;
+    }
   }
   &__btn{
          margin-top: 30px;

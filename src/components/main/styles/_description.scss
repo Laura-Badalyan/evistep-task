@@ -1,14 +1,11 @@
 .description{
-  &>div,
-  &>p{
-    margin: 20px auto;
-  }
   &__title{
     font-size: 49px;
     font-weight: $font-weight-bolder;
     color: $color-golden-tainoi;
     font-style: italic;
-    line-height: 45px;
+    line-height: 69px;
+    margin: 0 0 20px;
     &--accent {
       color: white;
       font-style: normal;
@@ -34,10 +31,12 @@
     line-height: 20px;
     color: #fff;
     cursor: pointer;
+    margin: 64px 0 20px;
   }
   &__about{
     display: flex;
     font-size: 16px;
+    margin: 0 0 41px;
     &--img{
     }
     &--info{
@@ -46,6 +45,7 @@
   }
   &__reviews{
     display: flex;
+    margin: 0 0 30px;
     &--img{
 
     }
@@ -65,5 +65,7 @@
     margin: 0 20px 0 0;
   }
   }
-
+  @include mobile-wide{
+    text-align: center;
+  }
 }

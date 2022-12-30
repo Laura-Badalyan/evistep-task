@@ -1,11 +1,9 @@
 extends pug/main
 block content
-    section.discountContainer
-        include components/navbar/discountNav
-        include components/header/discountHeader
-        include components/benetit/discountBenefit
+    include components/navbar/discountNav
+    include components/main/discountMain
+    include components/benetit/discountBenefit
     include components/awards/awards
-    .discountContainer
-        include components/features/features
-        include components/companies/companies
+    include components/features/features
+    include components/companies/companies
     include components/footer/footer

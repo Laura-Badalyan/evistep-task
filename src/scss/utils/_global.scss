@@ -1,6 +1,4 @@
 @import "vars";
-
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +7,7 @@
   color: $color-white;
 }
 
-body{
+body {
   background: $color-cod-gray;
 }
 
@@ -18,17 +16,23 @@ a {
   color: $color-white;
 }
 
-.discountContent {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .discountContainer {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  @include tablet-wide{
+    max-width: 1200px
+  }
+  @mixin tablet {
+    @media (max-width: 960px) { @content; }
+  }
+  @mixin mobile-wide {
+    @media (max-width: 640px) { @content; }
+  }
+  @mixin mobile {
+    @media (max-width: 480px) { @content; }
+  }
 }
 
 .btn {
@@ -44,6 +48,7 @@ a {
   line-height: 20px;
   color: $color-white;
   cursor: pointer;
+
   &:hover {
     transform: scale(1.03);
   }

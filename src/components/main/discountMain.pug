@@ -1,5 +1,5 @@
-header.discountHeader
-    .discountHeader__description.description
+main.discountMain.discountContainer
+    .discountMain__description.description
         p.description__title
             | CYBER MONDAY
             span.description__title--accent  means an even
@@ -9,8 +9,8 @@ header.discountHeader
         br
         | WebWork saves you time.
         br
-        .description__btn
-            a.btn(href="javascript:void(0)") SAVE BIG NOW
+        .description__btn.btn
+            a(href="javascript:void(0)") SAVE BIG NOW
         .description__about
             .description__aboutImage
                 +image("description__about--img","headerTick.svg")
@@ -28,6 +28,6 @@ header.discountHeader
                 +image("description__reviewImages--img","headerReview2.png")
             a(href="javascript:void(0)")
                 +image("description__reviewImages--img","headerReview3.png")
-    .discountHeader__discount.discount
+    .discountMain__discount.discount
         .discount__image
             +image("discount__image--img","headerPercent.png")

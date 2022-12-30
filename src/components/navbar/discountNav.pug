@@ -1,6 +1,7 @@
 - var menuItems = [{name: "Как покупать",link:"howToBuy.html"}, {name: "Распродажи",link:"sales.html"}, {name: "Цены", link:"prices.html"}, {name:"Помощь", link:"faq.html"},{name: "Бонусы", link:"partniorProgram.html"}, {name:"Блог", link:"blog.html"}, {name:"Магазины", link:"shops.html"}]
 
-nav.discountNav
-    a.discountNav__logo(href="javascript:void(0)")
-        +image("discountNav__logoImg","navLogo.svg")
-    a.discountNav__btn.btn(href="javascript:void(0)") GET NOW
+nav
+    .discountNav.discountContainer
+        a.discountNav__logo(href="javascript:void(0)")
+            +image("discountNav__logoImg","navLogo.svg")
+        a.discountNav__btn.btn(href="javascript:void(0)") GET NOW

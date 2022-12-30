@@ -7,7 +7,7 @@
   border-radius: 10px;
   margin-bottom: 50px;
   @include tablet{
-    width: 100%;
+    width: 80%;
   }
   &__discount {
     width: 200px;
@@ -20,14 +20,19 @@
     position: absolute;
     text-align: center;
     top: -60px;
-    font-size: 42px;
+    font-size: 46px;
     right: -66px;
     background: url(../img/benefitNeonOutline.png) no-repeat;
     background-size: cover;
     @include tablet{
       width: 150px;
       height: 150px;
-      font-size: 32px;
+      font-size: 36px;
+      top: 0;
+      right: 0;
+    }
+    @include mobile{
+      display: none;
     }
   }
   &__oldPrice {

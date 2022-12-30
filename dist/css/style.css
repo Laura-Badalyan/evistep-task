@@ -1,76 +1,76 @@
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-BlackItalic.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-BlackItalic.woff") format("truetype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-LightItalic.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-LightItalic.woff") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-SemiBoldItalic.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-SemiBoldItalic.woff") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-Regular.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-Regular.woff") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-ExtraLightItalic.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-ExtraLightItalic.woff") format("truetype");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-Italic.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-Italic.woff") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-Bold.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-Bold.woff") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-BoldItalic.woff") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-Light.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-Light.woff") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-SemiBold.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-SemiBold.woff") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("SourceSansPro-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/SourceSansPro-ExtraLight.woff") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -92,17 +92,16 @@ a {
   color: #ffffff;
 }
 
-.discountContent {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .discountContainer {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media (max-width: 1200px) {
+  .discountContainer {
+    max-width: 1200px;
+  }
 }
 
 .btn {
@@ -135,7 +134,7 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin: 19px 0 130px;
+  margin: 19px auto 130px;
 }
 @media (max-width: 960px) {
   .discountNav {
@@ -169,44 +168,42 @@ a {
   }
 }
 
-.discountHeader {
+.discountMain {
   color: #ffffff;
   box-sizing: border-box;
   margin: 0 auto 200px;
   display: flex;
 }
 @media (max-width: 960px) {
-  .discountHeader {
+  .discountMain {
     justify-content: center;
     margin: 0 auto;
   }
 }
-.discountHeader__description {
+.discountMain__description {
   width: 50%;
 }
 @media (max-width: 960px) {
-  .discountHeader__description {
+  .discountMain__description {
     width: 90%;
   }
 }
-.discountHeader__discount {
+.discountMain__discount {
   width: 50%;
 }
 @media (max-width: 960px) {
-  .discountHeader__discount {
+  .discountMain__discount {
     display: none;
   }
 }
 
-.description > div, .description > p {
-  margin: 20px auto;
-}
 .description__title {
   font-size: 49px;
   font-weight: 900;
   color: #FFC759;
   font-style: italic;
-  line-height: 45px;
+  line-height: 69px;
+  margin: 0 0 20px;
 }
 .description__title--accent {
   color: white;
@@ -234,16 +231,19 @@ a {
   line-height: 20px;
   color: #fff;
   cursor: pointer;
+  margin: 64px 0 20px;
 }
 .description__about {
   display: flex;
   font-size: 16px;
+  margin: 0 0 41px;
 }
 .description__about--info {
   margin-left: 10px;
 }
 .description__reviews {
   display: flex;
+  margin: 0 0 30px;
 }
 .description__reviews--info {
   margin-left: 10px;
@@ -261,6 +261,11 @@ a {
 .description__reviewImages--img {
   width: 80%;
   margin: 0 20px 0 0;
+}
+@media (max-width: 640px) {
+  .description {
+    text-align: center;
+  }
 }
 
 .discount__image {
@@ -282,6 +287,9 @@ a {
   }
 }
 
+.discountBenefit {
+  margin: 0 auto;
+}
 .discountBenefit__title {
   font-size: 39px;
   text-align: center;
@@ -323,7 +331,7 @@ a {
 }
 @media (max-width: 960px) {
   .benBlock {
-    width: 100%;
+    width: 80%;
   }
 }
 .benBlock__discount {
@@ -337,7 +345,7 @@ a {
   position: absolute;
   text-align: center;
   top: -60px;
-  font-size: 42px;
+  font-size: 46px;
   right: -66px;
   background: url(../img/benefitNeonOutline.png) no-repeat;
   background-size: cover;
@@ -346,7 +354,14 @@ a {
   .benBlock__discount {
     width: 150px;
     height: 150px;
-    font-size: 32px;
+    font-size: 36px;
+    top: 0;
+    right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .benBlock__discount {
+    display: none;
   }
 }
 .benBlock__oldPrice {
@@ -467,33 +482,33 @@ a {
   justify-content: center;
   flex-wrap: wrap;
 }
-.awards > .awards__img:nth-child(1), .awards > .awards__img:nth-child(2), .awards > .awards__img:nth-child(3), .awards > .awards__img:nth-child(4), .awards > .awards__img:nth-child(5) {
+.awards > img:nth-child(1), .awards > img:nth-child(2), .awards > img:nth-child(3), .awards > img:nth-child(4), .awards > img:nth-child(5) {
   margin-right: -10px;
 }
 @media (max-width: 960px) {
-  .awards > .awards__img:nth-child(1), .awards > .awards__img:nth-child(2), .awards > .awards__img:nth-child(3), .awards > .awards__img:nth-child(4), .awards > .awards__img:nth-child(5) {
+  .awards > img:nth-child(1), .awards > img:nth-child(2), .awards > img:nth-child(3), .awards > img:nth-child(4), .awards > img:nth-child(5) {
     margin: 10px;
   }
 }
-.awards > .awards__img:nth-child(7), .awards > .awards__img:nth-child(8), .awards > .awards__img:nth-child(9), .awards > .awards__img:nth-child(10), .awards > .awards__img:nth-child(11) {
+.awards > img:nth-child(7), .awards > img:nth-child(8), .awards > img:nth-child(9), .awards > img:nth-child(10), .awards > img:nth-child(11) {
   margin-left: -10px;
   z-index: -1;
 }
 @media (max-width: 960px) {
-  .awards > .awards__img:nth-child(7), .awards > .awards__img:nth-child(8), .awards > .awards__img:nth-child(9), .awards > .awards__img:nth-child(10), .awards > .awards__img:nth-child(11) {
+  .awards > img:nth-child(7), .awards > img:nth-child(8), .awards > img:nth-child(9), .awards > img:nth-child(10), .awards > img:nth-child(11) {
     margin: 10px;
   }
 }
-.awards > .awards__img:nth-child(8) {
+.awards > img:nth-child(8) {
   z-index: -2;
 }
-.awards > .awards__img:nth-child(9) {
+.awards > img:nth-child(9) {
   z-index: -3;
 }
-.awards > .awards__img:nth-child(10) {
+.awards > img:nth-child(10) {
   z-index: -4;
 }
-.awards > .awards__img:nth-child(11) {
+.awards > img:nth-child(11) {
   z-index: -5;
 }
 
@@ -675,6 +690,11 @@ a {
   font-weight: 600;
   font-size: 49px;
   line-height: 62px;
+}
+@media (max-width: 640px) {
+  .footer__title {
+    font-size: 30px;
+  }
 }
 .footer__btn {
   margin-top: 30px;
