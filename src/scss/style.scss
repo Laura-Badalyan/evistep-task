@@ -5,7 +5,6 @@
 @import "src/scss/utils/global";
 
 //COMPONENTS
-
 //NAVIGATION START
 @import "../components/navbar/styles/discountNav";
 //NAVIGATION END
@@ -18,3 +17,17 @@
 @import "../components/benetit/styles/discountBenefit";
 @import "../components/benetit/styles/benBlock";
 //BENEFIT END
+//SLIDER START
+@import "../components/awards/styles/awards";
+//SLIDER END
+//FEATURES START
+@import "../components/features/styles/features";
+@import "../components/features/styles/blocks";
+@import "../components/features/styles/info";
+//FEATURES END
+//COMPANIES START
+@import "../components/companies/styles/companies";
+//COMPANIES END
+//FOOTER START
+@import "../components/footer/styles/footer";
+//FOOTER END

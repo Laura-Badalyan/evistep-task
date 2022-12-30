@@ -19,13 +19,9 @@ a {
 }
 
 .discountContent {
-  max-width: 1800px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 60px;
-  @include mobile {
-    padding: 0 20px;
-  }
 }
 
 .discountContainer {
@@ -37,13 +33,17 @@ a {
 
 .btn {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: $color-cornflower-blue;
   border-radius: 31px;
   transition: all .3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 49px;
+  background: #8276ff;
+  font-weight: $font-weight-medium;
+  line-height: 20px;
+  color: $color-white;
+  cursor: pointer;
   &:hover {
     transform: scale(1.03);
   }

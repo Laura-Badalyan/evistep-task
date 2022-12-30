@@ -1,44 +1,129 @@
-.benBlock{
-  width: 537px;
+.benBlock {
+  width: 45%;
   height: 586px;
-  margin: 0 100px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(141, 159, 244, 0.3);
   backdrop-filter: blur(5.5px);
   border-radius: 10px;
-  &__discount{
+  margin-bottom: 50px;
+  @include tablet{
+    width: 100%;
+  }
+  &__discount {
     width: 200px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
     font-style: italic;
-    font-weight: bolder;
+    font-weight: $font-weight-bold;
     position: absolute;
+    text-align: center;
     top: -60px;
+    font-size: 42px;
     right: -66px;
     background: url(../img/benefitNeonOutline.png) no-repeat;
-    background-size: contain;
-  }
-  &__oldPrice{
-
-  }
-  &__info{
-    &--title{
-
-    }
-    &--price{
-
-    }
-    &--listItem{
-
+    background-size: cover;
+    @include tablet{
+      width: 150px;
+      height: 150px;
+      font-size: 32px;
     }
   }
-  &__months{
-
+  &__oldPrice {
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 58px;
+    position: absolute;
+    left: 73px;
+    top: 134px;
+    @include tablet-wide{
+      left: 40%;
+      top: 83px;
+    }
+    @include tablet{
+      font-size: 31px;
+    }
+    &--img {
+      position: absolute;
+      left: 0;
+      top: 17px;
+    }
   }
-  &__img{
+  &__info {
+    padding: 30px 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-white;
+    @include tablet-wide{
+      padding: 30px 16px;
+    }
+    &--title {
+      padding-bottom: 50px;
+      font-weight: 700;
+      font-size: 39px;
+      line-height: 52px;
+      letter-spacing: 0.007em;
+      color: rgba(255, 255, 255, 0.86);
+    }
 
+    &--price {
+      font-size: 80px;
+    }
+    &--cur {
+      font-size: 28px;
+      line-height: 59px;
+      color: rgba(255, 255, 255, 0.75);
+      @include tablet-wide{
+        font-size: 16px;
+      }
+      @include tablet{
+        font-size: 28px;
+      }
+    }
+    &__listItems {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &--listItem {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: $font-weight-regular;
+      font-size: 20px;
+      line-height: 24px;
+      @include tablet-wide{
+        font-size: 16px;
+      }
+      @include tablet{
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 50px auto 0;
+    width: 100%;
+    @include tablet-wide{
+      font-size: 14px;
+      width: 70%;
+    }
+    @include tablet-wide{
+      width: 50%;
+    }
+  }
+
+  &__months {
+    display: flex;
+    justify-content: end;
+    padding: 0 32px 28px 0;
+  }
+
+  &__img {
+    padding-right: 12px;
+    width: 38px;
+    height: 35px;
   }
 }

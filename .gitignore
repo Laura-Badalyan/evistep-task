@@ -153,7 +153,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
@@ -198,4 +197,3 @@ localhost.iml
 *.iml
 .idea/
 *.zip
-dist/

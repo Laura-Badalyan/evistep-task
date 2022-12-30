@@ -1,0 +1,35 @@
+.footer{
+  max-width: 1920px;
+  max-height: 374px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(147.19deg, #362A87 -2.99%, #2C2747 82.25%, #4323F1 157.46%);
+  @include tablet{
+    justify-content: center;
+    align-items: center;
+  }
+  &__wrapper{
+    padding: 127px 0 0 300px;
+    @include tablet-wide{
+      padding: 47px 0 0 110px;
+    }
+    @include tablet{
+      padding: 0;
+      margin: 20px auto;
+    }
+  }
+  &__title{
+    font-weight: $font-weight-medium;
+    font-size: 49px;
+    line-height: 62px;
+  }
+  &__btn{
+         margin-top: 30px;
+  }
+  &__img{
+    width: 50%;
+    @include tablet{
+      display: none;
+    }
+  }
+}

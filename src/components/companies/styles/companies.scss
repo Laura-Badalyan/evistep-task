@@ -1,0 +1,21 @@
+.companies{
+  margin: 180px auto;
+  &__title{
+    font-weight: $font-weight-medium;
+    font-size: 31px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &--item{
+      margin: 15px;
+    }
+  }
+}

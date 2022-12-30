@@ -1,0 +1,21 @@
+.features{
+  &__title{
+    font-size: 39px;
+    text-align: center;
+    &--accent{
+      font-size: 39px;
+      color: $color-golden-tainoi;
+      font-style: italic;
+    }
+  }
+  &__wrapper{
+    background: linear-gradient(147.19deg, #362A87 -2.99%, #2C2747 82.25%, #4323F1 157.46%);
+    border-radius: 26px;
+    padding: 73px 54px;
+    margin: 80px 0 0;
+  }
+  &blocks{
+  }
+  &__info{
+  }
+}
